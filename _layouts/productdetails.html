@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="product-info">
+<div class="product-title">
+<h3>{{ page.name }}</h3>
+<p class="text">{{ page.description }}</p>
+</div>
+<div class="product-details">
+  <div class="product-img">
+    {% if page.image2 %}
+    <div class="product-img-small">
+		<img src="{{ page.image2 }}" alt="{{ page.name }}" class="thumbnail" style="width:100px"/>
+	{% endif %}
+	{% if page.image3 %}
+		<img src="{{ page.image3 }}" alt="{{ page.name }}" class="thumbnail" style="width:100px"/>
+	{% endif %}
+	{% if page.image2 %}
+	</div>
+	{% endif %}
+	<img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail" style="width:250px"/>
+  </div>
+  <div class="product-description">
+    
+      {{ page.content }}
+    
+  </div>
+</div>
+</div>

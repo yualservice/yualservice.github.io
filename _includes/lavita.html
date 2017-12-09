@@ -1,0 +1,13 @@
+<div class="productsrow" id="lavita">
+{% for product in site.lavita %}
+  {% include product.html %}
+{% endfor %}
+</div>
+<div class="companyinfo" id="lavita">
+<div class="companyinfo-content">
+<img src="images/lavita logo.png">
+<div class="text">
+{% include_relative companyinfo/lavita.md %}
+</div>
+</div>
+</div>

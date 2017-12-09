@@ -1,0 +1,13 @@
+<div class="productsrow" id="revizor">
+{% for product in site.revizor %}
+  {% include product.html %}
+{% endfor %}
+</div>
+<div class="companyinfo" id="revizor">
+<div class="companyinfo-content">
+<img src="images/revizor logo.png">
+<div class="text">
+{% include_relative companyinfo/revizor.md %}
+</div>
+</div>
+</div>

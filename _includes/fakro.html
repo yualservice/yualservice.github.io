@@ -1,0 +1,13 @@
+<div class="productsrow" id="fakro">
+{% for product in site.fakro %}
+  {% include product.html %}
+{% endfor %}
+</div>
+<div class="companyinfo" id="fakro">
+<div class="companyinfo-content">
+<img src="images/fakro logo.png">
+<div class="text">
+{% include_relative companyinfo/fakro.md %}
+</div>
+</div>
+</div>

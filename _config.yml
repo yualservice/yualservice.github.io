@@ -1,0 +1,38 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: ЮАЛ сервис
+email: servis-stp@yandex.ru
+description: > # this means to ignore newlines until "baseurl:"
+  Компания ЮАЛ-Сервис предлагает вашему вниманию современную продукцию от отечественных и импортных производетелей по выгодным ценам: гофрированные трубопроводы из нержавеющей стали производства корейской фирмы Lavitatm, напольные люки-невидимки, невидимые ревизионные люки под плитку, гипсокартон, теплый пол от мировых брендов, а также продукцию от компании Fakro - чердачные лестницы, мансардные окны и комплектующие к ним.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+vk_username: юал-сервис
+vk_url: public64250285
+github_username:  yualservice
+phone1: 8 916 955 00 48
+phone2: 8 926 700 58 22
+collections:
+ revizor:
+  output: true
+ lavita:
+  output: true
+ devi:
+  output: true
+ fakro:
+  output: true
+ companyinfo:
+  output: true
+markdown: kramdown
