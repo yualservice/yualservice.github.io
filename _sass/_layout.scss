@@ -198,7 +198,7 @@ div#contact {
 	}
 	&:target {
     padding-top: 76px;
-	margin-top: -76px;
+	margin-top: -76px+$spacing-unit;
 	}
 }
 
