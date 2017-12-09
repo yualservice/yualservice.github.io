@@ -192,8 +192,9 @@ div#contact {
 	width: $content-width;
 	margin: $spacing-unit 0;
 	p {
-	margin: 0 $spacing-unit;
+	margin: 0 $spacing-unit $spacing-unit 0;
 	text-align: justify;
+	font-size: 16px;
 	}
 }
 
