@@ -188,10 +188,12 @@
 }
 
 div#contact {
+	display: flex;
 	width: $content-width;
 	margin: $spacing-unit 0;
 	p {
 	margin: 0 $spacing-unit;
+	text-align: justify;
 	}
 }
 
