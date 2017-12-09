@@ -196,6 +196,10 @@ div#contact {
 	text-align: justify;
 	font-size: 16px;
 	}
+	&:target {
+    padding-top: 76px;
+	margin-top: -76px;
+	}
 }
 
 /**
