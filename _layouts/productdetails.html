@@ -26,11 +26,8 @@ layout: default
     
   </div>
   <div class="product-pricelist">
-   	{% for xitm in site.data.pricelist %}
-      <li>
-        <a href="https://github.com/{{ xitm.github }}">{{ xitm.name }}</a>
-      </li>
-    {% endfor %}
+    {% assign thisproduct = site.data.pricelist[page.name] %}
+    {{ thisproduct.baseprice }}
   </div>
 </div>
 </div>
