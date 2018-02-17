@@ -29,6 +29,7 @@ layout: default
     
     {% assign thisproduct = site.data.pricelist[page.name] %}
     {{ thisproduct.name }}
+	{% site.data.pricelist[page.name].price1 %}
     
   </div>
 </div>
