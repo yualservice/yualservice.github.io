@@ -7,6 +7,9 @@ layout: default
 {% include fakro.html %}
 
 <div id="contact">
+{% for prices in site.data.pricelist %}
+    {{ prices.baseprice }}
+	{% endfor %}
 <div class="contact_info">
 {% capture contact_info %}{% include_relative companyinfo/yual.md %}{% endcapture %}
 {{ contact_info | markdownify }}
