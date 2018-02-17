@@ -27,10 +27,13 @@ layout: default
   </div>
   <div class="product-pricelist">
     
-    {% assign thisproduct = site.data.pricelist[page.name] %}
+ <!--   {% assign thisproduct = site.data.pricelist[page.name] %}
     {{ thisproduct.name }}
 	{% site.data.pricelist[page.name].price1 %}
-    
+    -->
+	{% for name in site.data.pricelist %}
+    {{ name.baseprice }}
+	{% endfor %}
   </div>
 </div>
 </div>
