@@ -31,8 +31,8 @@ layout: default
     {{ thisproduct.name }}
 	{% site.data.pricelist[page.name].price1 %}
     -->
-	{% for name in site.data.pricelist %}
-    {{ name.baseprice }}
+	{% for prices in site.data.pricelist %}
+    {{ prices.baseprice }}
 	{% endfor %}
   </div>
 </div>
