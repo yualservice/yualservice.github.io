@@ -1,5 +1,5 @@
 ---
-name: Rework
+name:Rework
 price: 39.99
 slug: rework
 sku: SW
