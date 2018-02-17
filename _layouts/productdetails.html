@@ -26,9 +26,9 @@ layout: default
     
   </div>
   <div class="product-pricelist">
-    {% assign thisproduct = site.data.pricelist[page.name] %}
+    {% assign thisproduct = site.data.pricelist[page.slug] %}
     {{ thisproduct.baseprice }}
-	{{ page.name }}
+	{{ page.slug }}
   </div>
 </div>
 </div>
