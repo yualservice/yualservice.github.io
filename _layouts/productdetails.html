@@ -26,14 +26,11 @@ layout: default
     
   </div>
   <div class="product-pricelist">
-    
- <!--   {% assign thisproduct = site.data.pricelist[page.name] %}
-    {{ thisproduct.name }}
-	{% site.data.pricelist[page.name].price1 %}
-    -->
-	{% for prices in site.data.pricelist %}
-    {{ prices.baseprice }}
-	{% endfor %}
+   	{% for xitm in site.data.pricelist %}
+      <li>
+        <a href="https://github.com/{{ xitm.github }}">{{ xitm.name }}</a>
+      </li>
+    {% endfor %}
   </div>
 </div>
 </div>
