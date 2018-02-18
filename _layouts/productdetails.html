@@ -25,7 +25,7 @@ layout: default
       {{ page.content }}
     
   </div>
-  {% if product.price == '' %}<div class="product-pricelist">
+  {% if page.price == null %}<div class="product-pricelist">
     {% include pricelist.html name=page.name %}
   </div>{% endif %}
 </div>
