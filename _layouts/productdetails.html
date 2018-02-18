@@ -21,7 +21,7 @@ layout: default
 	<img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail" style="width:250px"/>
   </div>
   <div class="product-description">
-    
+    {% if page.price %}<p class="price"><b>Цена:</b> {{ page.price }} руб</p></br>{% endif %}
       {{ page.content }}
     
   </div>
