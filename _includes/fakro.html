@@ -1,3 +1,18 @@
+{% if page.collection %}
+<div class="companyinfo" id="fakro">
+<div class="companyinfo-content">
+<img src="../images/fakro logo.png">
+<div class="text">
+{% include_relative fakro.md %}
+</div>
+</div>
+</div>
+<div class="productsrow" id="fakro">
+{% for product in site.fakro %}
+  {% include product.html %}
+{% endfor %}
+</div>
+{% else %}
 <div class="productsrow" id="fakro">
 {% for product in site.fakro %}
   {% include product.html %}
@@ -5,9 +20,10 @@
 </div>
 <div class="companyinfo" id="fakro">
 <div class="companyinfo-content">
-<img src="images/fakro logo.png">
+<img src="../images/fakro logo.png">
 <div class="text">
-{% include_relative companyinfo/fakro.md %}
+{% include_relative fakro/fakro.md %}
 </div>
 </div>
 </div>
+{% endif %}

@@ -1,3 +1,18 @@
+{% if page.collection %}
+<div class="companyinfo" id="revizor">
+<div class="companyinfo-content">
+<img src="../images/revizor logo.png">
+<div class="text">
+{% include_relative revizor.md %}
+</div>
+</div>
+</div>
+<div class="productsrow" id="revizor">
+{% for product in site.revizor %}
+  {% include product.html %}
+{% endfor %}
+</div>
+{% else %}
 <div class="productsrow" id="revizor">
 {% for product in site.revizor %}
   {% include product.html %}
@@ -5,9 +20,10 @@
 </div>
 <div class="companyinfo" id="revizor">
 <div class="companyinfo-content">
-<img src="images/revizor logo.png">
+<img src="../images/revizor logo.png">
 <div class="text">
-{% include_relative companyinfo/revizor.md %}
+{% include_relative revizor/revizor.md %}
 </div>
 </div>
 </div>
+{% endif %}

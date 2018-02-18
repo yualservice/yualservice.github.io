@@ -1,3 +1,18 @@
+{% if page.collection %}
+<div class="companyinfo" id="lavita">
+<div class="companyinfo-content">
+<img src="../images/lavita logo.png">
+<div class="text">
+{% include_relative lavita.md %}
+</div>
+</div>
+</div>
+<div class="productsrow" id="lavita">
+{% for product in site.lavita %}
+  {% include product.html %}
+{% endfor %}
+</div>
+{% else %}
 <div class="productsrow" id="lavita">
 {% for product in site.lavita %}
   {% include product.html %}
@@ -5,9 +20,10 @@
 </div>
 <div class="companyinfo" id="lavita">
 <div class="companyinfo-content">
-<img src="images/lavita logo.png">
+<img src="../images/lavita logo.png">
 <div class="text">
-{% include_relative companyinfo/lavita.md %}
+{% include_relative lavita/lavita.md %}
 </div>
 </div>
 </div>
+{% endif %}

@@ -1,3 +1,18 @@
+{% if page.collection %}
+<div class="companyinfo" id="devi">
+<div class="companyinfo-content">
+<img src="../images/devi logo.png">
+<div class="text">
+{% include_relative devi.md %}
+</div>
+</div>
+</div>
+<div class="productsrow" id="devi">
+{% for product in site.devi %}
+  {% include product.html %}
+{% endfor %}
+</div>
+{% else %}
 <div class="productsrow" id="devi">
 {% for product in site.devi %}
   {% include product.html %}
@@ -5,9 +20,10 @@
 </div>
 <div class="companyinfo" id="devi">
 <div class="companyinfo-content">
-<img src="images/devi logo.png">
+<img src="../images/devi logo.png">
 <div class="text">
-{% include_relative companyinfo/devi.md %}
+{% include_relative devi/devi.md %}
 </div>
 </div>
 </div>
+{% endif %}
