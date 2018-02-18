@@ -30,7 +30,7 @@ layout: default
 	
 	
 	{% for thisprod in site.data.pricelist %}
-		{% if thisprod.name == "Rework" %}
+		{% if thisprod.name == page.name %}
 			{{ thisprod.baseprice }}
 		{% endif %}
 	{% endfor %}
