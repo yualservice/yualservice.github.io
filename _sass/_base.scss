@@ -46,6 +46,17 @@ div.product-img-small{
   align-items: flex-start;
 }
 
+.product-pricelist{
+  border-collapse: collapse;
+  
+  tr{
+	td{
+	  border: 1px solid #dadada;
+	}
+  }
+
+}
+
 .page-content{
   display: flex;
   flex-direction: column;
