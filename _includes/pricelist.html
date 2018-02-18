@@ -1,5 +1,10 @@
 {% for thisprod in site.data.pricelist %}
 	{% if thisprod.name == include.name %}
-		{{ thisprod.baseprice }}
+		<tr><td>Опции</td>
+			<td>{{ thisprod.option1 }}</td>
+		</tr><tr>
+			<td>Цена</td>
+			<td>{{ thisprod.price1 }}</td>
+		</tr>
 	{% endif %}
 {% endfor %}

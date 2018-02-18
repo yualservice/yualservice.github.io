@@ -23,10 +23,10 @@ layout: default
   <div class="product-description">
     {% if page.price %}<p class="price"><b>Цена:</b> {{ page.price }} руб</p></br>{% endif %}
       {{ page.content }}
-    
   </div>
-  {% if page.price == null %}<div class="product-pricelist">
-    {% include pricelist.html name=page.name %}
-  </div>{% endif %}
 </div>
+{% if page.price == null %}<table class="product-pricelist">
+    {% include pricelist.html name=page.name %}
+</table>{% endif %}
+{{page.collection}}
 </div>
