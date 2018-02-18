@@ -1,7 +1,9 @@
 {% for thisprod in site.data.pricelist %}
 	{% if thisprod.name == include.name %}
 		<tr><td>Опции</td>
-			<td>{{ thisprod.option1 }}</td>
+			{% for num in [1:40] %}
+			<td>{{ thisprod.option[num] }}</td>
+			{% endfor %}
 		</tr><tr>
 			<td>Цена</td>
 			<td>{{ thisprod.price1 }}</td>
