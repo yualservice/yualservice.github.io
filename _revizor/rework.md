@@ -1,6 +1,6 @@
 ---
 name: Rework
-price: 39.99
+price:
 slug: rework
 sku: SW
 image: http://d.gr-assets.com/books/1391275636l/6732019.jpg

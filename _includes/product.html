@@ -5,5 +5,12 @@
   </a>
   <a class="product" href="{{ site.baseurl }}{{ product.url }}">{{ product.name }}</a>
 <p class="text">{{ product.description }}</p>
-<p class="price">от {{ product.price }} руб</p>
+<p class="price">
+	{% if product.price %}
+		{{ product.price }}
+	{% else %}
+		от {% include baseprice.html name=product.name %}
+	{% endif %}
+ руб
+</p>
 </div>
