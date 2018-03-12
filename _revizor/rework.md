@@ -1,12 +1,10 @@
 ---
+layout: productdetails
 name: Rework
 price:
-slug: rework
-sku: SW
 image: http://d.gr-assets.com/books/1391275636l/6732019.jpg
 image2: http://d.gr-assets.com/books/1391275636l/6732019.jpg
 image3: https://pp.userapi.com/c637622/v637622954/3ff8b/DfwOrRPOcvE.jpg
-layout: productdetails
 description: some text here. huh
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper ante non vehicula eleifend.  
