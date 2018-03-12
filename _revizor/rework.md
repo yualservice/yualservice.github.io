@@ -10,4 +10,10 @@ description: some text here. huh
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper ante non vehicula eleifend.  
 
 Phasellus ut **feugiat** tellus, vitae malesuada mi. Sed placerat ultrices enim, id fermentum ante tincidunt nec.
-Nulla ut mi bibendum, sodales ex ut, tempor odio. Mauris finibus elit eget ornare efficitur. Fusce a mauris vitae lorem.
+*Nulla ut mi bibendum, sodales ex ut, tempor odio. Mauris finibus elit eget ornare efficitur. Fusce a mauris vitae lorem.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
