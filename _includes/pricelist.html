@@ -1,6 +1,6 @@
 {% for thisprod in site.data.pricelist %}
 	{% if thisprod.name == include.name %}
-		<tr><td>Опции</td>
+		<tr><td><b>Опции</b></td>
 			{% if thisprod.option1 %}
 			<td>{{ thisprod.option1 }}</td>
 			{% endif %}
@@ -46,7 +46,7 @@
 			{% if thisprod.option15 %}
 			<td>{{ thisprod.option15 }}</td>
 			{% endif %}
-		</tr><tr><td>Цена, руб</td>
+		</tr><tr><td><b>Цена, руб</b></td>
 			{% if thisprod.option1 %}
 			<td>{{ thisprod.price1 }}</td>
 			{% endif %}
