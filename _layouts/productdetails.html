@@ -18,7 +18,7 @@ layout: default
 	{% if page.image2 %}
 	</div>
 	{% endif %}
-	<img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail" style="width:250px"/>
+	<a href="{{ page.image }}" data-lightbox="{{ page.name }}" class="thumbnail" style="width:250px">Image #1</a>
   </div>
   <div class="product-description">
     {% if page.price %}<p class="price"><b>Цена:</b> {{ page.price }} руб</p></br>{% endif %}
