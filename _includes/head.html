@@ -5,10 +5,10 @@
 
   <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+  <link href="../css/lightbox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
   <script src="../scripts/jquery-3.3.1.min.js"></script>
-  <script src="../scripts/lightbox.min.js"></script>
   
   {% for script in layout.head %}
     {% include {{ script }} %}
