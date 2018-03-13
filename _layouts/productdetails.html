@@ -10,15 +10,15 @@ layout: default
   <div class="product-img">
     {% if page.image2 %}
     <div class="product-img-small">
-		<img src="{{ page.image2 }}" alt="{{ page.name }}" class="thumbnail" style="width:100px"/>
+		<a href="{{ page.image }}" data-lightbox="{{ page.name }}"><img src="{{ page.image2 }}" alt="{{ page.name }}" class="thumbnail" style="width:100px"/></a>
 	{% endif %}
 	{% if page.image3 %}
-		<img src="{{ page.image3 }}" alt="{{ page.name }}" class="thumbnail" style="width:100px"/>
+		<a href="{{ page.image }}" data-lightbox="{{ page.name }}"><img src="{{ page.image3 }}" alt="{{ page.name }}" class="thumbnail" style="width:100px"/></a>
 	{% endif %}
 	{% if page.image2 %}
 	</div>
 	{% endif %}
-	<a href="{{ page.image }}" data-lightbox="{{ page.name }}" class="thumbnail" style="width:250px">Image #1</a>
+	<a href="{{ page.image }}" data-lightbox="{{ page.name }}"><img src="{{ page.image }}" class="thumbnail" style="width:250px"/></a>
   </div>
   <div class="product-description">
     {% if page.price %}<p class="price"><b>Цена:</b> {{ page.price }} руб</p></br>{% endif %}
