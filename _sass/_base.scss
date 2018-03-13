@@ -351,3 +351,23 @@ pre {
   transform: scale(1.02);
   }
 }
+
+.thumbnail_big {
+  backface-visibility: hidden;
+  width: 250px;
+  transition: 0.3s;
+  transform: scale(1);
+  &:hover{
+  transform: scale(1.02);
+  }
+}
+
+.thumbnail_small {
+  backface-visibility: hidden;
+  width: 100px;
+  transition: 0.3s;
+  transform: scale(1);
+  &:hover{
+  transform: scale(1.02);
+  }
+}
