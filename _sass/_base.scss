@@ -10,12 +10,18 @@ dl, dd, ol, ul, figure {
 
 .product-info{
   width: $content-width;
+  @include media-query($on-palm) {
+	width: 100%;
+  }
 }
 
 .product-title{
   align-self: right;
   h3{
 	margin: 0;
+  }
+  @include media-query($on-palm) {
+	margin-left: $spacing-unit;
   }
 }
 
@@ -36,6 +42,9 @@ div.product-img-small{
 .product-description{
   margin: 0 $spacing-unit;
   font-size: 20px;
+  @include media-query($on-palm) {
+	margin: 0 0 0 $spacing-unit;
+  }
 }
 
 .product-details{
@@ -44,6 +53,9 @@ div.product-img-small{
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  @include media-query($on-palm) {
+	margin: $spacing-unit;
+  }
 }
 
 .product-pricelist{
