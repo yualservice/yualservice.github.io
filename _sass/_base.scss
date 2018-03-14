@@ -128,6 +128,9 @@ a.product-img {
   align-items: center;
   display: flex;
   justify-content: center;
+  @include media-query($on-palm) {
+	 min-height: 0;
+  }
 }
 
 .companyinfo-content{
@@ -135,11 +138,21 @@ a.product-img {
   display: flex;
   align-items: center;
   padding: $spacing-unit*4 0 $spacing-unit*4 0;
+  img {
+	@include media-query($on-palm) {
+		width: 30%;
+		margin: 20px;
+	}
+  }
 }
 
 .companyinfo-content .text{
   margin-left: $spacing-unit*2;
   text-align: justify;
+  @include media-query($on-palm) {
+    margin-left: 0;
+	margin-right: $spacing-unit;
+  }
 }
 
 button{
