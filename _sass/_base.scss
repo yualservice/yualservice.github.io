@@ -88,8 +88,8 @@ div.product{
   @include media-query($on-palm) {
 	border: 0;
 	padding: 0;
-	max-width: 0;
-	transition: 0;
+	max-width: none;
+	transition: none;
   }
 }
 
@@ -98,7 +98,7 @@ div.product:hover{
   transition: 0.5s;
   @include media-query($on-palm) {
 	border: 0;
-    transition: 0;
+    transition: none;
   }
 }
 
@@ -148,11 +148,13 @@ a.product-img {
   display: flex;
   align-items: center;
   padding: $spacing-unit*4 0 $spacing-unit*4 0;
+  @include media-query($on-palm) {
+  padding: $spacing-unit 0 $spacing-unit 0;
+  }
   img {
 	@include media-query($on-palm) {
 		width: 30%;
-		margin: 20px;
-		padding: $spacing-unit 0 $spacing-unit 0;
+		margin: $spacing-unit;
 	}
   }
 }
@@ -391,9 +393,14 @@ pre {
   transform: scale(1);
   @include media-query($on-palm) {
 	width: 100px;
+	transition: none;
+	transform: none;
   }
   &:hover{
   transform: scale(1.02);
+  @include media-query($on-palm) {
+	transform: none;
+  }
   }
 }
 
@@ -404,9 +411,14 @@ pre {
   transform: scale(1);
   @include media-query($on-palm) {
 	width: 150px;
+	transition: none;
+	transform: none;
   }
   &:hover{
   transform: scale(1.02);
+  @include media-query($on-palm) {
+	transform: none;
+  }
   }
 }
 
@@ -417,8 +429,13 @@ pre {
   transform: scale(1);
   @include media-query($on-palm) {
 	width: 50px;
+	transition: none;
+	transform: none;
   }
   &:hover{
   transform: scale(1.02);
+  @include media-query($on-palm) {
+	transform: none;
+  }
   }
 }
