@@ -195,6 +195,9 @@ div#contact {
 	display: flex;
 	width: $content-width;
 	margin: $spacing-unit 0;
+	@include media-query($on-palm) {
+	  width: 100%;
+	}
 	.contact_info{
 	margin-top: $spacing-unit;
 	}
