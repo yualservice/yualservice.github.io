@@ -110,10 +110,7 @@ a.product-img {
   flex-flow: row wrap;
   margin: $spacing-unit 0;
   @include media-query($on-palm) {
-	max-width: $on-palm;
-  }
-  @include media-query($on-laptop) {
-	max-width: $on-laptop;
+	max-width: 100%;
   }
   
   &:target {
