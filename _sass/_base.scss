@@ -109,12 +109,19 @@ a.product-img {
   justify-content: flex-start;
   flex-flow: row wrap;
   margin: $spacing-unit 0;
+  @include media-query($on-palm) {
+	max-width: $on-palm;
+  }
+  @include media-query($on-laptop) {
+	max-width: $on-laptop;
+  }
   
   &:target {
     padding-top: 76px;
 	margin-top: -76px;
   }
 }
+
 
 .companyinfo{
   min-height: 300px;
