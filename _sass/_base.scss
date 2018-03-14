@@ -85,11 +85,21 @@ div.product{
   transition: 0.5s;
   text-align: center;
   margin: 5px;
+  @include media-query($on-palm) {
+	border: 0;
+	padding: 0;
+	max-width: 0;
+	transition: 0;
+  }
 }
 
 div.product:hover{
   border: 1px solid #dadada;
   transition: 0.5s;
+  @include media-query($on-palm) {
+	border: 0;
+    transition: 0;
+  }
 }
 
 a.product{
@@ -142,6 +152,7 @@ a.product-img {
 	@include media-query($on-palm) {
 		width: 30%;
 		margin: 20px;
+		padding: $spacing-unit 0 $spacing-unit 0;
 	}
   }
 }
