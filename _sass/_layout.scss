@@ -161,7 +161,7 @@
 	text-align: justify;
 }
 
-@include media-query($on-laptop) {
+@include media-query($on-palm) {
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -253,7 +253,7 @@ div#contact {
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-palm) {
         font-size: 36px;
     }
 }
@@ -264,7 +264,7 @@ div#contact {
     h2 {
         font-size: 32px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-palm) {
             font-size: 28px;
         }
     }
@@ -272,7 +272,7 @@ div#contact {
     h3 {
         font-size: 26px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-palm) {
             font-size: 22px;
         }
     }
@@ -280,7 +280,7 @@ div#contact {
     h4 {
         font-size: 20px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-palm) {
             font-size: 18px;
         }
     }
