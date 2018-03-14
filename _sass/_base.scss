@@ -368,6 +368,9 @@ pre {
   width: 200px;
   transition: 0.3s;
   transform: scale(1);
+  @include media-query($on-palm) {
+	width: 100px;
+  }
   &:hover{
   transform: scale(1.02);
   }
@@ -378,6 +381,9 @@ pre {
   width: 250px;
   transition: 0.3s;
   transform: scale(1);
+  @include media-query($on-palm) {
+	width: 150px;
+  }
   &:hover{
   transform: scale(1.02);
   }
@@ -388,6 +394,9 @@ pre {
   width: 100px;
   transition: 0.3s;
   transform: scale(1);
+  @include media-query($on-palm) {
+	width: 50px;
+  }
   &:hover{
   transform: scale(1.02);
   }
