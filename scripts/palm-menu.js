@@ -1,3 +1,3 @@
-$('.manu-icon').click(function(){
-    alert("The paragraph was clicked.");
+$(".manu-icon").click(function(){
+    alert("works!");
 });
