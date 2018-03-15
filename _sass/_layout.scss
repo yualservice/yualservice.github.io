@@ -38,16 +38,6 @@
     line-height: 56px;
 	width: 50%;
 
-    .menu-icon {
-        display: none;
-		@include media-query($on-palm) {
-		    position: fixed;
-			right: 0;
-			top: 0;
-			margin: 10px;
-		}
-    }
-
     .page-link {
 		display: inline-flex;
 		width: 100%;
@@ -109,6 +99,18 @@
             padding: 5px 10px;
         }
     }
+}
+
+.menu-icon {
+        display: none;
+		@include media-query($on-palm) {
+			display: block;
+		    position: fixed;
+			right: 0;
+			top: 0;
+			width: 20px;
+			padding: 10px;
+		}
 }
 
 
