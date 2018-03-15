@@ -1,3 +1,3 @@
 $("div.menu-icon").click(function(){
-    $("div.site-nav").addClass('open-menu');
+    $("nav.site-nav").addClass('open-menu');
 });
