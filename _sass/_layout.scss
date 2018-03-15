@@ -33,6 +33,19 @@
 	margin-top: 3px;
 }
 
+%bars {
+  cursor: pointer;
+    border-radius: 1px;
+    height: 2px;
+    width: 25px;
+    background: #999;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    transition: all .3s;
+}
+
 .site-nav {
     float: right;
     line-height: 56px;
