@@ -1,3 +1,3 @@
-$("div").click(function(){
+$("div.menu-icon").click(function(){
     alert("works!");
 });
