@@ -41,7 +41,10 @@
     .menu-icon {
         display: none;
 		@include media-query($on-palm) {
-		
+		    position: fixed;
+			right: 0;
+			top: 0;
+			margin: 10px;
 		}
     }
 
