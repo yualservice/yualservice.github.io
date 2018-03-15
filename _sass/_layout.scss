@@ -70,6 +70,7 @@
         background-color: #222;
 		height: 3000px;
 		transform: translate(100%);
+		transition: 0.5s;
 
         .trigger {
             clear: both;
@@ -88,6 +89,10 @@
     }
 }
 
+.open-menu {
+	transform: translate(0%);
+}
+
 .menu-icon {
         display: none;
 		@include media-query($on-palm) {
@@ -99,7 +104,7 @@
 			padding: $spacing-unit;
 			> svg {
                 path {
-                    fill: $grey-color-dark;
+                    fill: #666;
                 }
             }
 		}
