@@ -1,3 +1,3 @@
-$(".manu-icon").click(function(){
+$("div").click(function(){
     alert("works!");
 });
