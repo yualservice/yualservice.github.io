@@ -38,8 +38,27 @@
     line-height: 56px;
 	width: 50%;
 
-    .menu-icon {
+    .menu_bars {
         display: none;
+		@include media-query($on-palm) {
+			@extend %bars;
+
+			&::before,
+			&::after {
+				@extend %bars;
+				content: '';
+			}
+
+			&::before {
+				left: 0;
+				top: -8px;
+			}
+
+			&::after {
+				left: 0;
+				top: 8px;
+			}
+		}
     }
 
     .page-link {
