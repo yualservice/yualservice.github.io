@@ -20,6 +20,11 @@
     margin-bottom: 0;
     float: left;
 	color: #eee !important; 
+	@include media-query($on-palm) {
+	  position: relative;
+	  left: 50%;
+	  transform: translate(-50%);
+    }
 }
 
 .logo {
@@ -59,12 +64,10 @@
 
     @include media-query($on-palm) {
         position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+        top: 0;
+        right: 0;
+        background-color: #222;
+		height: 3000px;
 
         .menu-icon {
             display: block;
