@@ -1,5 +1,7 @@
 {% for thisprod in site.data.pricelist %}
 	{% if thisprod.name == include.name %}
+	{% if thisprod.option1 %}
+	<table class="product-pricelist">
 		<tr>
 			<td><b>Опции</b></td>
 			{% if thisprod.aoptionname %}
@@ -232,5 +234,7 @@
 			<td>{{ thisprod.price25 }}</td>
 		</tr>
 		{% endif %}
+	</table>
+	{% endif %}
 	{% endif %}
 {% endfor %}
