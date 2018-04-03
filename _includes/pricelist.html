@@ -8,7 +8,7 @@
 			{% endif %}
 		</tr>
 		{% for i in (1..2) %}
-		{% if thisprod.option[{{i}}] %}
+		{% if thisprod.option | append: {{i}} %}
 		<tr>
 			<td>{{ thisprod.option1 }}</td>
 			<td>{{ thisprod.price1 }}</td>
