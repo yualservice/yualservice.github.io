@@ -1,97 +1,21 @@
 {% for thisprod in site.data.pricelist %}
 	{% if thisprod.name == include.name %}
-		<tr><td><b>Опции</b></td>
-			{% if thisprod.option1 %}
-			<td>{{ thisprod.option1 }}</td>
-			{% endif %}
-			{% if thisprod.option2 %}
-			<td>{{ thisprod.option2 }}</td>
-			{% endif %}
-			{% if thisprod.option3 %}
-			<td>{{ thisprod.option3 }}</td>
-			{% endif %}
-			{% if thisprod.option4 %}
-			<td>{{ thisprod.option4 }}</td>
-			{% endif %}
-			{% if thisprod.option5 %}
-			<td>{{ thisprod.option5 }}</td>
-			{% endif %}
-			{% if thisprod.option6 %}
-			<td>{{ thisprod.option6 }}</td>
-			{% endif %}
-			{% if thisprod.option7 %}
-			<td>{{ thisprod.option7 }}</td>
-			{% endif %}
-			{% if thisprod.option8 %}
-			<td>{{ thisprod.option8 }}</td>
-			{% endif %}
-			{% if thisprod.option9 %}
-			<td>{{ thisprod.option9 }}</td>
-			{% endif %}
-			{% if thisprod.option10 %}
-			<td>{{ thisprod.option10 }}</td>
-			{% endif %}
-			{% if thisprod.option11 %}
-			<td>{{ thisprod.option11 }}</td>
-			{% endif %}
-			{% if thisprod.option12 %}
-			<td>{{ thisprod.option12 }}</td>
-			{% endif %}
-			{% if thisprod.option13 %}
-			<td>{{ thisprod.option13 }}</td>
-			{% endif %}
-			{% if thisprod.option14 %}
-			<td>{{ thisprod.option14 }}</td>
-			{% endif %}
-			{% if thisprod.option15 %}
-			<td>{{ thisprod.option15 }}</td>
-			{% endif %}
-		</tr><tr><td><b>Цена, руб</b></td>
-			{% if thisprod.option1 %}
-			<td>{{ thisprod.price1 }}</td>
-			{% endif %}
-			{% if thisprod.option2 %}
-			<td>{{ thisprod.price2 }}</td>
-			{% endif %}
-			{% if thisprod.option3 %}
-			<td>{{ thisprod.price3 }}</td>
-			{% endif %}
-			{% if thisprod.option4 %}
-			<td>{{ thisprod.price4 }}</td>
-			{% endif %}
-			{% if thisprod.option5 %}
-			<td>{{ thisprod.price5 }}</td>
-			{% endif %}
-			{% if thisprod.option6 %}
-			<td>{{ thisprod.price6 }}</td>
-			{% endif %}
-			{% if thisprod.option7 %}
-			<td>{{ thisprod.price7 }}</td>
-			{% endif %}
-			{% if thisprod.option8 %}
-			<td>{{ thisprod.price8 }}</td>
-			{% endif %}
-			{% if thisprod.option9 %}
-			<td>{{ thisprod.price9 }}</td>
-			{% endif %}
-			{% if thisprod.option10 %}
-			<td>{{ thisprod.price10 }}</td>
-			{% endif %}
-			{% if thisprod.option11 %}
-			<td>{{ thisprod.price11 }}</td>
-			{% endif %}
-			{% if thisprod.option12 %}
-			<td>{{ thisprod.price12 }}</td>
-			{% endif %}
-			{% if thisprod.option13 %}
-			<td>{{ thisprod.price13 }}</td>
-			{% endif %}
-			{% if thisprod.option14 %}
-			<td>{{ thisprod.price14 }}</td>
-			{% endif %}
-			{% if thisprod.option15 %}
-			<td>{{ thisprod.price15 }}</td>
+		<tr>
+			<td><b>Опции</b></td>
+			<td><b>Цена, руб</b></td>
+			{% if thisprod.aoptionname %}
+			<td><b>{{ thisprod.aoptionname }}</b></td>
 			{% endif %}
 		</tr>
+		{% if thisprod.option1 %}
+		<tr>
+			<td>{{ thisprod.option1 }}</td>
+			<td>{{ thisprod.price1 }}</td>
+			{% if thisprod.aoptio1 %}
+			<td>{{ thisprod.aoption1 }}</td>
+			{% endif %}
+		</tr>
+		{% endif %}
+		
 	{% endif %}
 {% endfor %}
