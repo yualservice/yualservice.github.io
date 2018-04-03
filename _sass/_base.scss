@@ -42,6 +42,7 @@ div.product-img-small{
 }
 
 .product-description{
+  width: 100%;
   font-size: 20px;
   @include media-query($on-palm) {
 	margin: 0 $spacing-unit;
