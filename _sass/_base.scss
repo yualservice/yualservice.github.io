@@ -42,10 +42,9 @@ div.product-img-small{
 }
 
 .product-description{
-  margin: 0 $spacing-unit;
   font-size: 20px;
   @include media-query($on-palm) {
-	margin: 0 0 0 $spacing-unit;
+	margin: 0 $spacing-unit;
   }
 }
 
