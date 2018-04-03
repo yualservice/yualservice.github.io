@@ -6,11 +6,16 @@
   <a class="product" href="{{ site.baseurl }}{{ product.url }}">{{ product.name }}</a>
 <p class="text">{{ product.description }}</p>
 <p class="price">
-	{% if product.price %}
-		{{ product.price }}
-	{% else %}
-		от {% include baseprice.html name=product.name %}
-	{% endif %}
- руб
+	{% for thisprod in site.data.pricelist %}
+		{% if thisprod.name == product.name %}
+			{% if thisprod.option1 %}
+				от {{ thisprod.baseprice }} руб
+			{% else %}
+				{{ thisprod.baseprice }} руб
+			{% endif %}
+		{% else %}
+			уточняйте цену
+		{% endif %}
+	{% endfor %}
 </p>
 </div>
