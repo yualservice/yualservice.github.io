@@ -7,15 +7,17 @@
 			<td><b>{{ thisprod.aoptionname }}</b></td>
 			{% endif %}
 		</tr>
+		{% for i in (1..2) %}
 		{% if thisprod.option1 %}
 		<tr>
 			<td>{{ thisprod.option1 }}</td>
 			<td>{{ thisprod.price1 }}</td>
+			<td>{{ forloop.index }}</td>
 			{% if thisprod.aoptio1 %}
 			<td>{{ thisprod.aoption1 }}</td>
 			{% endif %}
 		</tr>
 		{% endif %}
-		
+		{% endfor %}
 	{% endif %}
 {% endfor %}
