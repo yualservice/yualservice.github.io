@@ -2,22 +2,235 @@
 	{% if thisprod.name == include.name %}
 		<tr>
 			<td><b>Опции</b></td>
-			<td><b>Цена, руб</b></td>
 			{% if thisprod.aoptionname %}
 			<td><b>{{ thisprod.aoptionname }}</b></td>
 			{% endif %}
+			<td><b>Цена, руб</b></td>
 		</tr>
-		{% for i in (1..2) %}
-		{% if thisprod.option + {{i}} %}
+		{% if thisprod.option1 %}
 		<tr>
 			<td>{{ thisprod.option1 }}</td>
-			<td>{{ thisprod.price1 }}</td>
-			<td>{{ forloop.index }}</td>
-			{% if thisprod.aoptio1 %}
+			{% if thisprod.aoption1 %}
 			<td>{{ thisprod.aoption1 }}</td>
 			{% endif %}
+			<td>{{ thisprod.price1 }}</td>
 		</tr>
 		{% endif %}
-		{% endfor %}
+		{% if thisprod.option2 %}
+		<tr>
+			<td>{{ thisprod.option2 }}</td>
+			{% if thisprod.aoption2 %}
+			<td>{{ thisprod.aoption2 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price2 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option3 %}
+		<tr>
+			<td>{{ thisprod.option3 }}</td>
+			{% if thisprod.aoption3 %}
+			<td>{{ thisprod.aoption3 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price3 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option4 %}
+		<tr>
+			<td>{{ thisprod.option4 }}</td>
+			{% if thisprod.aoption4 %}
+			<td>{{ thisprod.aoption4 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price4 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option5 %}
+		<tr>
+			<td>{{ thisprod.option5 }}</td>
+			{% if thisprod.aoption5 %}
+			<td>{{ thisprod.aoption5 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price5 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option6 %}
+		<tr>
+			<td>{{ thisprod.option6 }}</td>
+			{% if thisprod.aoption6 %}
+			<td>{{ thisprod.aoption6 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price6 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option7 %}
+		<tr>
+			<td>{{ thisprod.option7 }}</td>
+			{% if thisprod.aoption7 %}
+			<td>{{ thisprod.aoption7 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price7 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option8 %}
+		<tr>
+			<td>{{ thisprod.option8 }}</td>
+			{% if thisprod.aoption8 %}
+			<td>{{ thisprod.aoption8 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price8 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option9 %}
+		<tr>
+			<td>{{ thisprod.option9 }}</td>
+			{% if thisprod.aoption9 %}
+			<td>{{ thisprod.aoption9 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price9 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option10 %}
+		<tr>
+			<td>{{ thisprod.option10 }}</td>
+			{% if thisprod.aoption10 %}
+			<td>{{ thisprod.aoption10 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price10 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option11 %}
+		<tr>
+			<td>{{ thisprod.option11 }}</td>
+			{% if thisprod.aoption11 %}
+			<td>{{ thisprod.aoption11 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price11 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option12 %}
+		<tr>
+			<td>{{ thisprod.option12 }}</td>
+			{% if thisprod.aoption12 %}
+			<td>{{ thisprod.aoption12 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price12 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option13 %}
+		<tr>
+			<td>{{ thisprod.option13 }}</td>
+			{% if thisprod.aoption13 %}
+			<td>{{ thisprod.aoption13 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price13 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option14 %}
+		<tr>
+			<td>{{ thisprod.option14 }}</td>
+			{% if thisprod.aoption14 %}
+			<td>{{ thisprod.aoption14 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price14 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option15 %}
+		<tr>
+			<td>{{ thisprod.option15 }}</td>
+			{% if thisprod.aoption15 %}
+			<td>{{ thisprod.aoption15 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price15 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option16 %}
+		<tr>
+			<td>{{ thisprod.option16 }}</td>
+			{% if thisprod.aoption16 %}
+			<td>{{ thisprod.aoption16 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price16 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option17 %}
+		<tr>
+			<td>{{ thisprod.option17 }}</td>
+			{% if thisprod.aoption17 %}
+			<td>{{ thisprod.aoption17 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price17 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option18 %}
+		<tr>
+			<td>{{ thisprod.option18 }}</td>
+			{% if thisprod.aoption18 %}
+			<td>{{ thisprod.aoption18 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price18 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option19 %}
+		<tr>
+			<td>{{ thisprod.option19 }}</td>
+			{% if thisprod.aoption19 %}
+			<td>{{ thisprod.aoption19 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price19 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option20 %}
+		<tr>
+			<td>{{ thisprod.option20 }}</td>
+			{% if thisprod.aoption20 %}
+			<td>{{ thisprod.aoption20 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price20 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option21 %}
+		<tr>
+			<td>{{ thisprod.option21 }}</td>
+			{% if thisprod.aoption21 %}
+			<td>{{ thisprod.aoption21 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price21 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option22 %}
+		<tr>
+			<td>{{ thisprod.option22 }}</td>
+			{% if thisprod.aoption22 %}
+			<td>{{ thisprod.aoption22 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price22 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option23 %}
+		<tr>
+			<td>{{ thisprod.option23 }}</td>
+			{% if thisprod.aoption23 %}
+			<td>{{ thisprod.aoption23 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price23 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option24 %}
+		<tr>
+			<td>{{ thisprod.option24 }}</td>
+			{% if thisprod.aoption24 %}
+			<td>{{ thisprod.aoption24 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price24 }}</td>
+		</tr>
+		{% endif %}
+		{% if thisprod.option25 %}
+		<tr>
+			<td>{{ thisprod.option25 }}</td>
+			{% if thisprod.aoption25 %}
+			<td>{{ thisprod.aoption25 }}</td>
+			{% endif %}
+			<td>{{ thisprod.price25 }}</td>
+		</tr>
+		{% endif %}
 	{% endif %}
 {% endfor %}
