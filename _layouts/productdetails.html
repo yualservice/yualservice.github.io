@@ -24,9 +24,10 @@ layout: default
   
 	{% for thisprod in site.data.pricelist %}
 		{% if thisprod.name == product.name %}
-			{% unless thisprod.option1 %}
+			{% if thisprod.option1 %}
+			{% else %}
 				<p class="price"><b>Цена:</b> {{ thisprod.baseprice }} руб</p></br>
-			{% endunless %}
+			{% endif %}
 		{% endif %}
 	{% endfor %}
   
