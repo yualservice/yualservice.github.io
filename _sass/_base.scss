@@ -26,6 +26,8 @@ dl, dd, ol, ul, figure {
 }
 
 div.product-img{
+  float: left;
+  margin-right: $spacing-unit;
   flex-shrink: 0;
   display: flex;
   align-items: flex-start;

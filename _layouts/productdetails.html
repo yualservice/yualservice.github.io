@@ -7,6 +7,7 @@ layout: default
 <p class="text">{{ page.description }}</p>
 </div>
 <div class="product-details">
+  <div class="product-description">
   <div class="product-img">
     {% if page.image2 %}
     <div class="product-img-small">
@@ -20,7 +21,6 @@ layout: default
 	{% endif %}
 	<a href="{{ page.image }}" data-lightbox="{{ page.name }}" data-title="{{ page.description }}"><img src="{{ page.image }}" class="thumbnail_big"/></a>
   </div>
-  <div class="product-description">
   
 	{% for thisprod in site.data.pricelist %}
 		{% if thisprod.name == page.name %}
