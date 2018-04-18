@@ -31,7 +31,8 @@ div.product-img{
   flex-shrink: 0;
   display: flex;
   align-items: flex-start;
-    img {
+    a {
+	overflow: hidden;
 	margin: 2px;
 	}
 }
